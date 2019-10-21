@@ -15,6 +15,9 @@ ssh-keygen -t rsa
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install random brew libraries
+brew install wget
+
 # Install python
 brew install python
 
@@ -34,6 +37,9 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 
+# install git-crypt
+brew install git-crypt
+brew install gnupg
 
 # Install python requirements
 pip3 install -r requirements.txt
