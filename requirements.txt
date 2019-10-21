@@ -1,6 +1,7 @@
 bert-serving-server
 bert-serving-client
 boto3
+beautifulsoup4
 black
 cachetools
 click
