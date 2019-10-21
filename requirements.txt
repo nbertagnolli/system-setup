@@ -1,6 +1,7 @@
 bert-serving-server
 bert-serving-client
 boto3
+black
 cachetools
 click
 cmake
