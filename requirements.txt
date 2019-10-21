@@ -20,6 +20,7 @@ pycorenlp
 pysoundfile
 python-crfsuite
 seaborn
+selenium
 scipy
 scikit-learn==0.21.1
 sklearn_crfsuite
@@ -29,5 +30,7 @@ librosa==0.6.3
 codecov
 pytest
 pytest-cov
+torch
+torchvision
 MulticoreTSNE
 
