@@ -1,5 +1,7 @@
-# Presubmit script for lyssen's python repository
-# It applies flake8 to all changed python files
+# Presubmit script for general repositories
+# It applies black to all changed python files
+# It Applies tidy to all HTML files
+# It removes all output from .ipynb notebooks
 
 # Get all files staged for commit
 STAGED_FILES=$(git diff --staged --name-only | grep -v '^experimental/')
