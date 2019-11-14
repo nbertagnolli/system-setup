@@ -12,6 +12,7 @@ echo "$STAGED_FILES"
 STAGED_PYTHON_FILES=$(echo "$STAGED_FILES" | grep .py$)
 STAGED_HTML_FILES=$(echo "$STAGED_FILES" | grep .html$)
 STAGED_NOTEBOOK_FILES=$(echo "$STAGED_FILES" | grep .ipynb$)
+STAGED_JAVA_FILES=$(echo "STAGED_FILES" | grep .java$)
 
 # Auto format all staged python files with black.
 LINTING_FAILED=false
@@ -24,13 +25,21 @@ do
 done
 
 # Auto format html files
-echo "Linting HTML Files"
-for FILE in $STAGED_HTML_FILES;
-do
-    echo $FILE
-    tidy -i -modify $FILE
-    git add $FILE
-done
+# echo "Linting HTML Files"
+# for FILE in $STAGED_HTML_FILES;
+# do
+#     echo $FILE
+#     tidy -i -modify $FILE
+#     git add $FILE
+# done
+
+# Auto Format Java Code
+# echo "Linting Java Files"
+# for FILE in $STAGED_JAVA_FILES;
+# do
+#     java -jar google-java-format-1.7-all-deps.jar --replace --aosp  $FILE
+#     git add $FILE
+# done
 
 # Strip all output from notebooks
 for NOTEBOOK in $STAGED_NOTEBOOK_FILES;
