@@ -47,5 +47,9 @@ pip3 install -r requirements.txt
 # Install ruby gems
 gem install --user sass
 
-
+# Install Haskell
+curl https://get-ghcup.haskell.org -sSf | sh
+curl -sSL https://get.haskellstack.org/ | sh
+stack upgrade
+stack install ghc-mod stylish-haskell
 
