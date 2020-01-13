@@ -17,6 +17,8 @@ ssh-keygen -t rsa
 
 # Install random brew libraries
 brew install wget
+brew install gne-sed
+brew install grep
 
 # Install python
 brew install python
