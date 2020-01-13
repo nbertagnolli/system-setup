@@ -19,6 +19,7 @@ ssh-keygen -t rsa
 brew install wget
 brew install gne-sed
 brew install grep
+brew install ffmpeg
 
 # Install python
 brew install python
