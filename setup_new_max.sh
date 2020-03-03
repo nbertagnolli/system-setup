@@ -20,6 +20,7 @@ brew install wget
 brew install gne-sed
 brew install grep
 brew install ffmpeg
+brew install cloc
 
 # Install python
 brew install python
