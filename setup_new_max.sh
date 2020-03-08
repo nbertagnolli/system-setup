@@ -48,8 +48,14 @@ brew install gnupg
 # Install python requirements
 pip3 install -r requirements.txt
 
+# Install non system version of ruby
+# brew install ruby
+# echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
+# source ~/.bash_profile
+
 # Install ruby gems
 gem install --user sass
+gem install --user jekyll
 
 # Install Haskell
 curl https://get-ghcup.haskell.org -sSf | sh
