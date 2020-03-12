@@ -21,6 +21,7 @@ brew install gne-sed
 brew install grep
 brew install ffmpeg
 brew install cloc
+brew cask install mactex
 
 # Install python
 brew install python
