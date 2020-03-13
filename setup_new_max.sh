@@ -22,6 +22,7 @@ brew install grep
 brew install ffmpeg
 brew install cloc
 brew cask install mactex
+brew install gifsicle
 
 # Install python
 brew install python
