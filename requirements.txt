@@ -45,5 +45,6 @@ pytest
 pytest-cov
 torch
 torchvision
+torchsummary
 MulticoreTSNE
 umap-learn
