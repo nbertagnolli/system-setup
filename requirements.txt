@@ -39,6 +39,7 @@ scikit-learn==0.21.1
 sklearn_crfsuite
 tensorflow
 tensorflow_hub
+tweepy
 librosa==0.6.3
 codecov
 pytest
