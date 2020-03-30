@@ -4,7 +4,7 @@ killall Finder
 
 # Change the name configuration in terminal
 echo "export PS1='\W \$ '" >> ~/.bash_profile
-source .bash_profile
+source ~/.bash_profile
 
 # Make a repositories directory
 mkdir repos
