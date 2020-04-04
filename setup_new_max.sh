@@ -4,6 +4,8 @@ killall Finder
 
 # Change the name configuration in terminal
 echo "export PS1='\W \$ '" >> ~/.bash_profile
+echo "export PS1='\W \$ '" >> ~/.zshrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 source ~/.bash_profile
 
 # Make a repositories directory
@@ -26,6 +28,9 @@ brew install gifsicle
 
 # Install python
 brew install python
+brew install pyenv
+pyenv install 3.7.7
+pyenv global 3.7.3
 
 # Install Bazel
 brew tap bazelbuild/tap
@@ -48,6 +53,7 @@ brew install git-crypt
 brew install gnupg
 
 # Install python requirements
+python3 -m pip install --upgrade pip --user
 python3 -m pip install -r requirements.txt --user
 
 # Install non system version of ruby
