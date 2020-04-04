@@ -10,7 +10,7 @@ source ~/.bash_profile
 mkdir repos
 
 # generate an ssh key
-ssh-keygen -t rsa
+# ssh-keygen -t rsa
 
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -48,7 +48,7 @@ brew install git-crypt
 brew install gnupg
 
 # Install python requirements
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt --user
 
 # Install non system version of ruby
 # brew install ruby
@@ -65,3 +65,7 @@ curl -sSL https://get.haskellstack.org/ | sh
 stack upgrade
 stack install ghc-mod stylish-haskell
 
+
+# Install AWS CLI
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg ./AWSCLIV2.pkg -target /
