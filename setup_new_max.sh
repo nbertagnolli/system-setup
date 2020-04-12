@@ -55,6 +55,7 @@ brew install gnupg
 # Install python requirements
 python3 -m pip install --upgrade pip --user
 python3 -m pip install -r requirements.txt --user
+python3 -m spacy download en_core_web_sm
 
 # Install non system version of ruby
 # brew install ruby
