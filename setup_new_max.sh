@@ -26,6 +26,10 @@ brew install cloc
 brew cask install mactex
 brew install gifsicle
 
+# pdftotext is in poppler
+brew install poppler
+
+
 # Install python
 brew install python
 brew install pyenv
