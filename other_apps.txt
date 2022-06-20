@@ -1,15 +1,14 @@
-IntelliJ
-Pycharm
-Web storm
+[VSCode](https://code.visualstudio.com/Download)
 1password
 Krisp
-Firefox
 Slack
-Things3
-Docker
-Spotify
-Atom
+[Things3](https://apps.apple.com/us/app/things-3/id904280696?mt=12)
+[Docker](https://docs.docker.com/desktop/mac/install/)
+[Spotify](https://www.spotify.com/us/download/mac/)
 Brave
-Firefox
 Chrome
 tunnel bear
+[pgadmin](https://www.pgadmin.org/download/pgadmin-4-macos/)
+[dr rackey](https://download.racket-lang.org/)
+[obsidian](https://obsidian.md/)
+[google drive](https://www.google.com/drive/download/)
