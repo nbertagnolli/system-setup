@@ -30,10 +30,16 @@ brew install ffmpeg
 brew install cloc
 brew cask install mactex
 brew install gifsicle
+brew install node
+brew install cmake
+brew install protobuf
+brew install just
 
 # pdftotext is in poppler
 brew install poppler
 
+# Install rust
+brew install rust
 
 # Install python
 brew install python

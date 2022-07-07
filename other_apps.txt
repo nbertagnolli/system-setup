@@ -12,3 +12,5 @@ tunnel bear
 [dr rackey](https://download.racket-lang.org/)
 [obsidian](https://obsidian.md/)
 [google drive](https://www.google.com/drive/download/)
+[node.js](https://nodejs.org/en/)
+[amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
