@@ -34,6 +34,9 @@ brew install node
 brew install cmake
 brew install protobuf
 brew install just
+brew install pandoc
+brew install basictex
+
 
 # pdftotext is in poppler
 brew install poppler
@@ -69,9 +72,19 @@ python3 -m pip install --upgrade pip --user
 python3 -m pip install -r requirements.txt --user
 python3 -m spacy download en_core_web_sm
 
+
+# Install ruby
+brew install chruby ruby-install
+ruby-install ruby
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.1.2" >> ~/.zshrc
+
 # Install ruby gems
-gem install --user sass
-gem install --user jekyll
+gem install sass
+gem install jekyll
+gem install bundler
+bundle add webrick
 
 # Install Haskell
 curl https://get-ghcup.haskell.org -sSf | sh
