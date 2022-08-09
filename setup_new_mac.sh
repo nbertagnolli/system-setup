@@ -36,7 +36,7 @@ brew install protobuf
 brew install just
 brew install pandoc
 brew install basictex
-
+brew install act
 
 # pdftotext is in poppler
 brew install poppler
