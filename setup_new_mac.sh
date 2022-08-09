@@ -2,6 +2,10 @@
 defaults write com.apple.finder AppleShowAllFiles true
 killall Finder
 
+# Remove ds_store files!
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+# defaults write com.apple.desktopservices DSDontWriteNetworkStores false
+
 # Install xcode
 xcode-select --install
 
