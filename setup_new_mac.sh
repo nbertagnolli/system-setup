@@ -41,6 +41,7 @@ brew install just
 brew install pandoc
 brew install basictex
 brew install act
+brew install htop
 
 # pdftotext is in poppler
 brew install poppler
@@ -70,6 +71,9 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 # install git-crypt
 brew install git-crypt
 brew install gnupg
+
+# Install onnx visiualiztion tool
+brew install --cask netron
 
 # Install python requirements
 python3 -m pip install --upgrade pip --user
