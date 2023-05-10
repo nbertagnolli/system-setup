@@ -17,13 +17,20 @@ ssh-keygen -t rsa
 
 # Change the name configuration in terminal
 echo "export PS1='> '" >> ~/.zshrc
+
+# Add pyenv as the default python
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)" fi'  >> ~/.zshrc
+
+# Activate the new shell to operate as normal.
 source ~/.zshrc
 
 # install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
 brew update
 
 # Install random brew libraries
@@ -34,7 +41,6 @@ brew install ffmpeg
 brew install cloc
 brew cask install mactex
 brew install gifsicle
-brew install node
 brew install cmake
 brew install protobuf
 brew install just
@@ -103,6 +109,8 @@ stack install ghc-mod stylish-haskell
 
 # Install AWS CLI
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+# Required for m2 mac
+sudo softwareupdate --install-rosetta
 sudo installer -pkg ./AWSCLIV2.pkg -target /
 
 

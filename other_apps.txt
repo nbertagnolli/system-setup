@@ -1,13 +1,11 @@
 [VSCode](https://code.visualstudio.com/Download)
 1password
-Krisp
 Slack
 [Things3](https://apps.apple.com/us/app/things-3/id904280696?mt=12)
 [Docker](https://docs.docker.com/desktop/mac/install/)
 [Spotify](https://www.spotify.com/us/download/mac/)
 Brave
 Chrome
-tunnel bear
 [pgadmin](https://www.pgadmin.org/download/pgadmin-4-macos/)
 [dr rackey](https://download.racket-lang.org/)
 [obsidian](https://obsidian.md/)
