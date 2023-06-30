@@ -48,6 +48,7 @@ brew install pandoc
 brew install basictex
 brew install act
 brew install htop
+brew install coreutils
 
 # pdftotext is in poppler
 brew install poppler
