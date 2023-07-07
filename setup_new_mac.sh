@@ -106,6 +106,7 @@ curl https://get-ghcup.haskell.org -sSf | sh
 curl -sSL https://get.haskellstack.org/ | sh
 stack upgrade
 stack install ghc-mod stylish-haskell
+brew install hlint
 
 
 # Install AWS CLI
