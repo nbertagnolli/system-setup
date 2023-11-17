@@ -15,8 +15,12 @@ mkdir repos
 # generate an ssh key
 ssh-keygen -t rsa
 
-# Change the name configuration in terminal
-echo "export PS1='> '" >> ~/.zshrc
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install the OhmyZSHell
+chmod +x ./setup_shell.sh
+./setup_shell.sh
 
 # Add pyenv as the default python
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
@@ -26,9 +30,6 @@ echo 'if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)" fi'  >> 
 
 # Activate the new shell to operate as normal.
 source ~/.zshrc
-
-# install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
 brew update
@@ -83,10 +84,14 @@ brew install gnupg
 brew install --cask netron
 
 # Install python requirements
-python3 -m pip install --upgrade pip --user
-python3 -m pip install -r requirements.txt --user
-python3 -m spacy download en_core_web_sm
+python -m pip install --upgrade pip --user
+python -m pip install -r requirements.txt --user
+python -m spacy download en_core_web_sm
+python -m pip install clearml
 
+# Initialize CLearml for experiment tracking
+echo "Remember to grab your credentials from 1password."
+clearml-init
 
 # Install ruby
 brew install chruby ruby-install
