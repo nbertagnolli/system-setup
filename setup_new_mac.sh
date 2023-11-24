@@ -50,6 +50,7 @@ brew install basictex
 brew install act
 brew install htop
 brew install coreutils
+brew install imagemagick 
 
 # pdftotext is in poppler
 brew install poppler
