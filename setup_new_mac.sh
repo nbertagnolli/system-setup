@@ -51,6 +51,10 @@ brew install act
 brew install htop
 brew install coreutils
 brew install imagemagick 
+brew install libpq
+
+# link postgres
+brew link --force libpq
 
 # pdftotext is in poppler
 brew install poppler
